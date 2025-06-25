@@ -1,19 +1,23 @@
 import { ThisDayWrapper, Top, Bottom } from "./styles"
+import { useState } from "react"
+import CurrentTime from "./CurrentTime"
 
 const ThisDay = () => {
-  const imageSrc = './images/weatherIcons/rain.svg'
+  const imageSrc = './images/weatherIcons/'
+  const [temperature, setTemperature] = useState(21);
+  const [imgSrc, setImgSrc] = useState(imageSrc + "/rain.svg")
 
   return(
     <ThisDayWrapper>
       <Top>
         <div>
-          <h2>100°</h2>
+          <h2>{temperature}°</h2>
           <h3>Now</h3>
         </div>
-        <img src={imageSrc} alt=""/>
+        <img src={imgSrc} alt=""/>
       </Top>
       <Bottom>
-        <div>오후 16:03</div>
+        <CurrentTime/>
         <div>
           Seoul - KR
         </div>
