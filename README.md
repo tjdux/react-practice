@@ -1,6 +1,6 @@
 # 날씨 앱 
 ## 프로젝트 명
-WeatherViwe - React 기반 날씨 예보 앱 
+> WeatherViwe - React 기반 날씨 예보 앱 
 ## 목적
 - 사용자가 선택한 도시의 현재 날씨, 주간 예보 정보를 제공
 - react 학습
