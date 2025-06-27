@@ -1,11 +1,15 @@
+import { useTime } from "../../utils/useTime";
+
 const CurrentTime = () => {
+  const currentTime = useTime();
+
   const time = new Intl.DateTimeFormat("ko-KR", 
     {
       hour: "numeric",
       minute: "numeric"
     }
   ).format(
-    new Date()
+    currentTime
   );
 
   return(
