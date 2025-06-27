@@ -27,7 +27,8 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "default-case": "off"
   },
   "browserslist": {
     "production": [
