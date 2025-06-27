@@ -3,7 +3,7 @@ import getWeatherIcon from "../../utils/getWeatherIcon";
 
 function Day({ day }) {
   const { date, forecast } = day;
-  console.log(forecast);
+
   const maxTemp = Math.max(...forecast.map((x) => Math.round(x.main.temp_max)));
   const minTemp = Math.min(...forecast.map((x) => Math.round(x.main.temp_max)));
   const dayName = `${new Date(date)}`.split(" ")[0];
